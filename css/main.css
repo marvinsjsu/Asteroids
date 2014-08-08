@@ -1,0 +1,11 @@
+html, body, canvas {
+  padding: 0px;
+  margin: 0px;
+}
+
+#game-canvas {
+  border: 1px solid #000000;
+  -webkit-box-shadow: 0 8px 6px -6px black;
+     -moz-box-shadow: 0 8px 6px -6px black;
+          box-shadow: 0 8px 6px -6px black;
+}
