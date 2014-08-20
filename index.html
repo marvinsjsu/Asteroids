@@ -9,6 +9,13 @@
     <link rel="stylesheet" href="css/main.css"/>
   </head>
   <body>
+
+    <h3>Pop Some</h3>
+
+    <div class="instructions">
+
+    </div>
+
     <canvas id="game-canvas"></canvas>
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -22,8 +29,8 @@
     <script src="lib/gameView.js"></script>
     <script>
       var canvasEl = document.getElementById("game-canvas");
-      canvasEl.height = window.innerHeight;
-      canvasEl.width = window.innerWidth;
+      canvasEl.height = window.innerHeight - (window.innerHeight / 3);
+      canvasEl.width = window.innerWidth - (window.innerWidth / 3);
       var ctx = canvasEl.getContext("2d");
       var game = new Asteroids.Game();
       var gameView = new Asteroids.GameView(game, ctx).start(ctx);
