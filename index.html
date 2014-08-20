@@ -10,13 +10,25 @@
   </head>
   <body>
 
-    <h3>Pop Some</h3>
+    <h3>How many can you pop?</h3>
 
     <div class="instructions">
-
+      <h4></h4>
     </div>
 
+    <div id="">
+      <h4>Score: <span id="score">0</span>
+          bullets fired: <span id="fired">0</span>
+          misses: <span id="misses">0</span>
+          accuracy: <span id="accuracy">0%</span>
+      </h4>
+    </div>
     <canvas id="game-canvas"></canvas>
+
+    <div class="">
+      <ul id="score-history">
+      </ul>
+    </div>
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="lib/keymaster.js"></script>
